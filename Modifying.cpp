@@ -1,0 +1,18 @@
+// Modifying array {1,2,3,4,5} output -> 6,7,8,9,10
+
+#include<iostream>
+using namespace std;
+
+int main(){
+int arr[] = {4,5,6,7,8};
+int n = sizeof(arr)/sizeof(arr[0]);
+
+for(int i=0;i<n;i++){
+    arr[i] = arr[i] + 5;
+}
+cout<<"Modifying Array: ";
+for(int i=0;i<n;i++){
+    cout<<arr[i]<<" ";
+}
+return 0;
+}
